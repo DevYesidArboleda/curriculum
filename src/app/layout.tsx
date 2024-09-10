@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import LanguageToggle from "@/components/LanguageToggle";
+import { LanguageProvider } from "../../contexts/LanguageContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,17 +28,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AnimatedBackground />
-        <Navigation />
-        <main className="py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto">
-              {children}
-            </div>
-          </main>
+        
+       <AnimatedBackground />
+       <LanguageProvider>
+          <div className="min-h-screen bg-transparent">
+            
+              <Navigation />
+              <LanguageToggle />            
+                <main className="py-12 px-4 sm:px-6 lg:px-8">
+                  <div className="max-w-3xl mx-auto">
+                    {children}
+                  </div>
+                </main>
+          </div>
+        </LanguageProvider>
       </body>
     </html>
   );

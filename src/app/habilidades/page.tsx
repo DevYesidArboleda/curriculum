@@ -4,8 +4,20 @@ import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaGitAlt, FaAws, FaDocker } from 'react-icons/fa'
 import { SiJavascript, SiTypescript } from 'react-icons/si'
+import { useLanguage } from '../../../contexts/LanguageContext'
 
 const MotionCard = motion(Card)
+
+const content = {
+  es: {
+    title: 'Habilidades',
+    technicalSkills: 'Competencias Técnicas',
+  },
+  en: {
+    title: 'Skills',
+    technicalSkills: 'Technical Skills',
+  }
+}
 
 const skills = [
   { name: 'React', icon: FaReact, color: 'text-blue-500' },
@@ -20,16 +32,19 @@ const skills = [
 ]
 
 export default function Habilidades() {
+  const { language } = useLanguage()
+  const t = content[language]
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Habilidades</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">{t.title}</h1>
       <MotionCard whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
         <CardHeader>
-          <CardTitle>Competencias Técnicas</CardTitle>
+          <CardTitle>{t.technicalSkills}</CardTitle>
         </CardHeader>
         <CardContent>
           <motion.div 

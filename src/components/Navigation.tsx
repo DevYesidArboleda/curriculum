@@ -2,15 +2,17 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useLanguage } from '../../contexts/LanguageContext'
 
 const Navigation = () => {
   const pathname = usePathname()
+  const { language } = useLanguage()
 
   const navItems = [
-    { name: 'Información Personal', path: '/' },
-    { name: 'Estudios', path: '/estudios' },
-    { name: 'Experiencia', path: '/experiencia' },
-    { name: 'Habilidades', path: '/habilidades' },
+    { name: language === 'es' ? 'Información Personal' : 'Personal Information', path: '/' },
+    { name: language === 'es' ? 'Estudios' : 'Education', path: '/estudios' },
+    { name: language === 'es' ? 'Experiencia' : 'Experience', path: '/experiencia' },
+    { name: language === 'es' ? 'Habilidades' : 'Skills', path: '/habilidades' },
   ]
 
   return (
