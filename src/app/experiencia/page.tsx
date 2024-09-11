@@ -12,21 +12,21 @@ const content = {
     professionalCareer: 'Trayectoria Profesional',
     job1: {
       title: 'Desarrollador Full Stack Senior',
-      company: 'TechCorp S.L.',
-      period: '2020-Presente',
+      company: 'Dropi',
+      period: '2023-Presente',
       responsibilities: [
-        'Desarrollo de aplicaciones web utilizando React y Node.js',
-        'Implementación de arquitecturas serverless con AWS',
-        'Liderazgo de equipo de desarrollo de 5 personas'
+        'Desarrollo de aplicaciones web utilizando React (Next js) y Node.js',
+        'Implementación de arquitecturas serverless con AWS'
       ]
     },
     job2: {
-      title: 'Desarrollador Front-end',
-      company: 'WebSolutions Inc.',
-      period: '2019-2020',
+      title: 'Desarrollador Vtex IO',
+      company: 'Balloom Group',
+      period: '2022-2023',
       responsibilities: [
-        'Creación de interfaces de usuario con React y Vue.js',
-        'Optimización de rendimiento de aplicaciones web'
+        'Creación de componentes custom con react',
+        'desarrollo front de Vtex IO',
+        "Maquetación"
       ]
     }
   },
@@ -35,18 +35,17 @@ const content = {
     professionalCareer: 'Professional Career',
     job1: {
       title: 'Senior Full Stack Developer',
-      company: 'TechCorp LLC',
-      period: '2020-Present',
+      company: 'Dropi',
+      period: '20233-Present',
       responsibilities: [
         'Development of web applications using React and Node.js',
-        'Implementation of serverless architectures with AWS',
-        'Leadership of a 5-person development team'
+        'Implementation of serverless architectures with AWS'
       ]
     },
     job2: {
-      title: 'Front-end Developer',
-      company: 'WebSolutions Inc.',
-      period: '2019-2020',
+      title: 'Front-end Developer Vtex IO',
+      company: 'Balloom Group',
+      period: '2022-2023',
       responsibilities: [
         'Creation of user interfaces with React and Vue.js',
         'Optimization of web application performance'

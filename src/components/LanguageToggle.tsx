@@ -9,7 +9,7 @@ const LanguageToggle = () => {
   const { language, toggleLanguage } = useLanguage()
 
   return (
-    <div className="flex mt-3 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 items-end justify-end">
+    <div className="flex md:mt-3 mt-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 items-end justify-end">
       
       <Switch id="airplane-mode" onClick={toggleLanguage}/>
       <Label htmlFor="airplane-mode">{language === 'es' ? 'EN' : 'ES'}</Label>
