@@ -88,6 +88,50 @@ export default function Experiencia() {
               ))}
             </ul>
           </motion.div>
+          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
+            <h3 className="font-semibold">Desarrollador Vtex IO</h3>
+            <p className="text-sm text-gray-600">Summa Solution , 2021-2022</p>
+            <ul className="list-disc list-inside mt-2 text-sm">
+              {t.job2.responsibilities.map((resp, index) => (
+                <li key={index}>{resp}</li>
+              ))}
+            </ul>
+          </motion.div>
+          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
+            <h3 className="font-semibold">Desarrollador Vtex IO</h3>
+            <p className="text-sm text-gray-600">JUMP DIGITAL, 2021-2021</p>
+            <ul className="list-disc list-inside mt-2 text-sm">
+              {t.job2.responsibilities.map((resp, index) => (
+                <li key={index}>{resp}</li>
+              ))}
+            </ul>
+          </motion.div>
+          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
+            <h3 className="font-semibold"> Desarrollador de software</h3>
+            <p className="text-sm text-gray-600">DevbotStudio S.A.S , 2020-2021</p>
+            <ul className="list-disc list-inside mt-2 text-sm">
+              {t.job2.responsibilities.map((resp, index) => (
+                <li key={index}>{resp}</li>
+              ))}
+            </ul>
+          </motion.div>
+          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
+            <h3 className="font-semibold"> Consultor de desarrollo</h3>
+            <p className="text-sm text-gray-600">Intelecto S.A.S  , 2020-2021</p>
+            <ul className="list-disc list-inside mt-2 text-sm">
+              <li >Desarrollo de aplicativos web con javascript </li>
+              <li >Manejo de servidores en la nube (Linux) </li>
+            </ul>
+          </motion.div>
+          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
+            <h3 className="font-semibold"> Consultor Sistemas</h3>
+            <p className="text-sm text-gray-600">MasterTics S.A.S  , 2018-2020</p>
+            <ul className="list-disc list-inside mt-2 text-sm">
+              <li >Desarrollo de aplicativos web con wordpress </li>
+              <li >Manejo de servidores en la nube y fisicos "Linux" </li>
+              <li >Mantemiento y instalación de bases de datos </li>
+            </ul>
+          </motion.div>
         </CardContent>
       </MotionCard>
     </motion.div>
