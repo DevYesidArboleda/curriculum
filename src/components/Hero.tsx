@@ -68,7 +68,7 @@ const Hero = () => {
                         draggable="false"/>
                 </motion.div>
 
-                <motion.div className="text-center text-xl lg:max-w-[1000px] max-w-[500px] mx-auto" drag>
+                <motion.div className="text-center text-xl lg:max-w-[1000px] max-w-[500px] mx-auto" >
                 <CardHeader>
                     {/* <CardTitle>{t.personalInfo}</CardTitle> */}
                     </CardHeader>

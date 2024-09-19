@@ -12,7 +12,7 @@ const LanguageToggle = () => {
     <div className="flex md:mt-3 mt-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 items-end justify-end">
       
       <Switch id="airplane-mode" onClick={toggleLanguage}/>
-      <Label htmlFor="airplane-mode">{language === 'es' ? 'EN' : 'ES'}</Label>
+      <Label htmlFor="airplane-mode">{language === 'es' ? 'ES' : 'EN'}</Label>
       {/* <Button onClick={toggleLanguage} variant="outline" size="sm">
         {language === 'es' ? 'EN' : 'ES'}
       </Button> */}
