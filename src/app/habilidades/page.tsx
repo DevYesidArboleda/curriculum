@@ -41,8 +41,8 @@ export default function Habilidades() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">{t.title}</h1>
-      <MotionCard whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
+      <h1 className="text-3xl font-bold text-white mb-6">{t.title}</h1>
+      <MotionCard className='border-0 bg-transparent relative overflow-clip bg-[linear-gradient(to_bottom,#00FF0000,#2B1942_35%,#8F5C55_60%,#00FF0000_80%)]' whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
         <CardHeader>
           <CardTitle>{t.technicalSkills}</CardTitle>
         </CardHeader>

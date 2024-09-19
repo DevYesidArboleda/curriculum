@@ -64,69 +64,69 @@ export default function Experiencia() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">{t.title}</h1>
-      <MotionCard whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
+      <h1 className="text-3xl font-bold text-white mb-6">{t.title}</h1>
+      <MotionCard className='border-0 bg-transparent relative overflow-clip bg-[linear-gradient(to_bottom,#00FF0000,#2B1942_35%,#8F5C55_60%,#00FF0000_80%)]' whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
         <CardHeader>
           <CardTitle>{t.professionalCareer}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">{t.job1.title}</h3>
-            <p className="text-sm text-gray-600">{t.job1.company}, {t.job1.period}</p>
-            <ul className="list-disc list-inside mt-2 text-sm">
+            <h3 className="font-semibold text-orange-500">{t.job1.title}</h3>
+            <p className="text-sm text-white">{t.job1.company}, {t.job1.period}</p>
+            <ul className="list-disc list-inside mt-2 text-sm text-white">
               {t.job1.responsibilities.map((resp, index) => (
                 <li key={index}>{resp}</li>
               ))}
             </ul>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">{t.job2.title}</h3>
-            <p className="text-sm text-gray-600">{t.job2.company}, {t.job2.period}</p>
-            <ul className="list-disc list-inside mt-2 text-sm">
+            <h3 className="font-semibold text-orange-500">{t.job2.title}</h3>
+            <p className="text-sm text-white">{t.job2.company}, {t.job2.period}</p>
+            <ul className="list-disc list-inside mt-2 text-sm text-white">
               {t.job2.responsibilities.map((resp, index) => (
                 <li key={index}>{resp}</li>
               ))}
             </ul>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">Desarrollador Vtex IO</h3>
-            <p className="text-sm text-gray-600">Summa Solution , 2021-2022</p>
-            <ul className="list-disc list-inside mt-2 text-sm">
+            <h3 className="font-semibold text-orange-500">Desarrollador Vtex IO</h3>
+            <p className="text-sm text-white">Summa Solution , 2021-2022</p>
+            <ul className="list-disc list-inside mt-2 text-sm text-white">
               {t.job2.responsibilities.map((resp, index) => (
                 <li key={index}>{resp}</li>
               ))}
             </ul>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">Desarrollador Vtex IO</h3>
-            <p className="text-sm text-gray-600">JUMP DIGITAL, 2021-2021</p>
-            <ul className="list-disc list-inside mt-2 text-sm">
+            <h3 className="font-semibold text-orange-500">Desarrollador Vtex IO</h3>
+            <p className="text-sm text-white">JUMP DIGITAL, 2021-2021</p>
+            <ul className="list-disc list-inside mt-2 text-sm text-white">
               {t.job2.responsibilities.map((resp, index) => (
                 <li key={index}>{resp}</li>
               ))}
             </ul>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold"> Desarrollador de software</h3>
-            <p className="text-sm text-gray-600">DevbotStudio S.A.S , 2020-2021</p>
-            <ul className="list-disc list-inside mt-2 text-sm">
+            <h3 className="font-semibold text-orange-500"> Desarrollador de software</h3>
+            <p className="text-sm text-white">DevbotStudio S.A.S , 2020-2021</p>
+            <ul className="list-disc list-inside mt-2 text-sm text-white">
               {t.job2.responsibilities.map((resp, index) => (
                 <li key={index}>{resp}</li>
               ))}
             </ul>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold"> Consultor de desarrollo</h3>
-            <p className="text-sm text-gray-600">Intelecto S.A.S  , 2020-2021</p>
-            <ul className="list-disc list-inside mt-2 text-sm">
+            <h3 className="font-semibold text-orange-500"> Consultor de desarrollo</h3>
+            <p className="text-sm text-white">Intelecto S.A.S  , 2020-2021</p>
+            <ul className="list-disc list-inside mt-2 text-sm text-white">
               <li >Desarrollo de aplicativos web con javascript </li>
               <li >Manejo de servidores en la nube (Linux) </li>
             </ul>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold"> Consultor Sistemas</h3>
-            <p className="text-sm text-gray-600">MasterTics S.A.S  , 2018-2020</p>
-            <ul className="list-disc list-inside mt-2 text-sm">
+            <h3 className="font-semibold text-orange-500"> Consultor Sistemas</h3>
+            <p className="text-sm text-white">MasterTics S.A.S  , 2018-2020</p>
+            <ul className="list-disc list-inside mt-2 text-sm text-white">
               <li >Desarrollo de aplicativos web con wordpress </li>
               <li >Manejo de servidores en la nube y fisicos "Linux" </li>
               <li >Mantemiento y instalación de bases de datos </li>

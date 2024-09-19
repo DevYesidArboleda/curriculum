@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useLanguage } from '../../contexts/LanguageContext'
+import Hero from '@/components/Hero'
+import About from '@/components/About'
 
 const MotionCard = motion(Card)
 
@@ -48,12 +50,15 @@ export default function Home() {
             height={128}
             objectFit="cover"
           />
-        </div> */}
+        </div> 
         <h1 className="text-4xl font-bold text-gray-900 mb-2">{t.title}</h1>
-        <p className="text-xl text-gray-600">{t.subtitle}</p>
+        <p className="text-xl text-gray-600">{t.subtitle}</p>*/}
       </header>
 
-      <MotionCard whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
+      <Hero/>
+      <About/>
+
+      {/* <MotionCard whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
         <CardHeader>
           <CardTitle>{t.personalInfo}</CardTitle>
         </CardHeader>
@@ -63,7 +68,7 @@ export default function Home() {
           <p><strong>{t.phone}</strong> +57 3162115964</p>
           <p><strong>{t.location}</strong> Cali, colombia</p>
         </CardContent>
-      </MotionCard>
+      </MotionCard> */}
     </motion.div>
   )
 }

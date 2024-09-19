@@ -35,55 +35,55 @@ export default function Estudios() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">{t.title}</h1>
-      <MotionCard whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
+      <h1 className="text-3xl font-bold text-White mb-6">{t.title}</h1>
+      <MotionCard className='border-0 bg-transparent relative overflow-clip bg-[linear-gradient(to_bottom,#00FF0000,#2B1942_35%,#8F5C55_60%,#00FF0000_80%)]' whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
         <CardHeader>
           <CardTitle>{t.academicFormation}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">{t.degree}</h3>
-            <p className="text-sm text-gray-600">{t.university1}, 2013-2019</p>
+            <h3 className="font-semibold text-orange-500">{t.degree}</h3>
+            <p className="text-sm text-white">{t.university1}, 2013-2019</p>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">{t.master}</h3>
-            <p className="text-sm text-gray-600">{t.university2}, 2018</p>
+            <h3 className="font-semibold text-orange-500">{t.master}</h3>
+            <p className="text-sm text-white">{t.university2}, 2018</p>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">Fundamentals Installation and Upgrade</h3>
-            <p className="text-sm text-gray-600">PLURALSIGHT, 2018</p>
+            <h3 className="font-semibold text-orange-500">Fundamentals Installation and Upgrade</h3>
+            <p className="text-sm text-white">PLURALSIGHT, 2018</p>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">Disaster Recovery and Data Movement</h3>
-            <p className="text-sm text-gray-600">PLURALSIGHT, 2018</p>
+            <h3 className="font-semibold text-orange-500">Disaster Recovery and Data Movement</h3>
+            <p className="text-sm text-white">PLURALSIGHT, 2018</p>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold"> Performance Tuning and Optimization </h3>
-            <p className="text-sm text-gray-600">PLURALSIGHT, 2019</p>
+            <h3 className="font-semibold text-orange-500"> Performance Tuning and Optimization </h3>
+            <p className="text-sm text-white">PLURALSIGHT, 2019</p>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">[Español] AWS Certified Cloud Practitioner (CLF-C02)-2024</h3>
-            <p className="text-sm text-gray-600">Udemy, 2024</p>
+            <h3 className="font-semibold text-orange-500">[Español] AWS Certified Cloud Practitioner (CLF-C02)-2024</h3>
+            <p className="text-sm text-white">Udemy, 2024</p>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">Principios SOLID y Clean Code</h3>
-            <p className="text-sm text-gray-600">Udemy, 2023</p>
+            <h3 className="font-semibold text-orange-500">Principios SOLID y Clean Code</h3>
+            <p className="text-sm text-white">Udemy, 2023</p>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">JavaScript Moderno: Guía para dominar el lenguaje</h3>
-            <p className="text-sm text-gray-600">Udemy, 2018</p>
+            <h3 className="font-semibold text-orange-500">JavaScript Moderno: Guía para dominar el lenguaje</h3>
+            <p className="text-sm text-white">Udemy, 2018</p>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">Angular de cero a Experto</h3>
-            <p className="text-sm text-gray-600">Udemy, 2022</p>
+            <h3 className="font-semibold text-orange-500">Angular de cero a Experto</h3>
+            <p className="text-sm text-white">Udemy, 2022</p>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">Docker - Guía práctica de uso para desarrolladores</h3>
-            <p className="text-sm text-gray-600">Udemy, 2022</p>
+            <h3 className="font-semibold text-orange-500">Docker - Guía práctica de uso para desarrolladores</h3>
+            <p className="text-sm text-white">Udemy, 2022</p>
           </motion.div>
           <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold">DevOps con Docker, Jenkins, Kubernetes, git, GitFlow CI y CD</h3>
-            <p className="text-sm text-gray-600">Udemy, 2022</p>
+            <h3 className="font-semibold text-orange-500">DevOps con Docker, Jenkins, Kubernetes, git, GitFlow CI y CD</h3>
+            <p className="text-sm text-white">Udemy, 2022</p>
           </motion.div>
         </CardContent>
       </MotionCard>

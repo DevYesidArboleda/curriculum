@@ -33,11 +33,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
-       <AnimatedBackground />
-       <LanguageProvider>
-       <div className="min-h-screen bg-transparent">
-            <AnimatedBackground />
+        <AnimatedBackground />
+        <LanguageProvider>
+          <div className="min-h-screen bg-transparent">
             <div className="lg:flex">
               {/* Sidebar for desktop */}
               <div className="hidden lg:block lg:w-3/10 p-4">
@@ -46,7 +44,8 @@ export default function RootLayout({
               {/* Main content */}
               <div className="lg:w-7/10 w-full">
                 <div className="p-4">
-                  <div className="flex justify-between items-center mb-4">
+                  {/* Navigation and Language Toggle */}
+                  <div className="flex flex-col sm:flex-row justify-between items-center mb-4 space-y-4 sm:space-y-0">
                     <Navigation />
                     <LanguageToggle />
                   </div>
@@ -60,7 +59,7 @@ export default function RootLayout({
                 </div>
               </div>
             </div>
-            </div>
+          </div>
         </LanguageProvider>
       </body>
     </html>
