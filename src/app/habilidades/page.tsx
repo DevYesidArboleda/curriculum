@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaGitAlt, FaAws, FaDocker } from 'react-icons/fa'
-import { SiJavascript, SiTypescript } from 'react-icons/si'
+import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaGitAlt, FaAws, FaDocker,  FaWordpress, FaLinux, FaAngular,FaCss3Alt, FaPhp  } from 'react-icons/fa'
+import { SiJavascript, SiTypescript, SiVtex, SiMicrosoftazure, SiNextdotjs, SiOracle, SiTailwindcss } from 'react-icons/si'
 import { useLanguage } from '../../../contexts/LanguageContext'
 
 const MotionCard = motion(Card)
@@ -29,6 +29,14 @@ const skills = [
   { name: 'Git', icon: FaGitAlt, color: 'text-red-600' },
   { name: 'AWS', icon: FaAws, color: 'text-yellow-500' },
   { name: 'Docker', icon: FaDocker, color: 'text-blue-500' },
+  { name: 'Wordpress', icon: FaWordpress, color: 'text-blue-500' },
+  { name: 'Linux', icon: FaLinux, color: 'text-black' },
+  { name: 'Angular', icon: FaAngular, color: 'text-orange' },
+  { name: 'PHP', icon: FaPhp, color: 'text-blue-500' },
+  { name: 'Vtex', icon: SiVtex, color: 'text-red' },
+  { name: 'Azure', icon: SiMicrosoftazure, color: 'text-blue-500' },
+  { name: 'Oracle', icon: SiOracle, color: 'text-red-00' },
+  { name: 'tailwind', icon: SiTailwindcss, color: 'text-blue-500' },
 ]
 
 export default function Habilidades() {

@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useLanguage } from '../../../contexts/LanguageContext'
+import { FaReact, FaNodeJs, FaAws, FaWordpress, FaLinux, FaGitAlt, FaAngular,FaCss3Alt, FaPhp    } from 'react-icons/fa'
+import { SiJavascript, SiTypescript, SiVtex, SiMicrosoftazure, SiNextdotjs, SiOracle, SiTailwindcss  } from 'react-icons/si'
 
 const MotionCard = motion(Card)
 
@@ -10,47 +12,162 @@ const content = {
   es: {
     title: 'Experiencia Laboral',
     professionalCareer: 'Trayectoria Profesional',
-    job1: {
-      title: 'Desarrollador Full Stack Senior',
-      company: 'Dropi',
-      period: '2023-Presente',
-      responsibilities: [
-        'Desarrollo de aplicaciones web utilizando React (Next js) y Node.js',
-        'Implementación de arquitecturas serverless con AWS'
-      ]
-    },
-    job2: {
-      title: 'Desarrollador Vtex IO',
-      company: 'Balloom Group',
-      period: '2022-2023',
-      responsibilities: [
-        'Creación de componentes custom con react',
-        'desarrollo front de Vtex IO',
-        "Maquetación"
-      ]
-    }
+    jobs: [
+      {
+        title: 'Desarrollador Full Stack Senior',
+        company: 'Dropi',
+        period: '2023-Presente',
+        responsibilities: [
+          'Desarrollo de aplicaciones web utilizando React (Next.js) y Node.js',
+          'Implementación de arquitecturas serverless con AWS'
+        ],
+        technologies: [FaReact, SiNextdotjs, FaNodeJs, FaAws, SiTypescript, FaGitAlt, FaCss3Alt, SiTailwindcss ]
+      },
+      {
+        title: 'Desarrollador Vtex IO',
+        company: 'Balloom Group',
+        period: '2022-2023',
+        responsibilities: [
+          'Creación de componentes custom con React',
+          'Desarrollo front de Vtex IO',
+          'Maquetación'
+        ],
+        technologies: [FaReact, SiVtex, SiJavascript, FaGitAlt, SiTailwindcss, FaCss3Alt  ]
+      },
+      {
+        title: 'Desarrollador Vtex IO',
+        company: 'Summa Solution',
+        period: '2021-2022',
+        responsibilities: [
+          'Creación de componentes custom con React',
+          'Desarrollo front de Vtex IO',
+          'Maquetación'
+        ],
+        technologies: [FaReact, SiVtex, SiJavascript, FaGitAlt, FaCss3Alt]
+      },
+      {
+        title: 'Desarrollador Vtex IO',
+        company: 'JUMP DIGITAL',
+        period: '2021-2021',
+        responsibilities: [
+          'Creación de componentes custom con React',
+          'Desarrollo front de Vtex IO',
+          'Maquetación'
+        ],
+        technologies: [FaReact, SiVtex, SiJavascript, FaGitAlt, FaCss3Alt]
+      },
+      {
+        title: 'Desarrollador de software',
+        company: 'DevbotStudio S.A.S',
+        period: '2020-2021',
+        responsibilities: [
+          'Desarrollo de aplicaciones web con JavaScript',
+          'Implementación de soluciones de software'
+        ],
+        technologies: [SiJavascript, FaReact, FaNodeJs, FaGitAlt, FaPhp, FaCss3Alt, FaAngular  ]
+      },
+      {
+        title: 'Consultor de desarrollo',
+        company: 'Intelecto S.A.S',
+        period: '2020-2021',
+        responsibilities: [
+          'Desarrollo de aplicativos web con JavaScript',
+          'Manejo de servidores en la nube (Linux)'
+        ],
+        technologies: [SiJavascript, FaLinux, SiMicrosoftazure, FaGitAlt, FaCss3Alt, FaPhp  ]
+      },
+      {
+        title: 'Consultor Sistemas',
+        company: 'MasterTics S.A.S',
+        period: '2018-2020',
+        responsibilities: [
+          'Desarrollo de aplicativos web con WordPress',
+          'Manejo de servidores en la nube y físicos "Linux"',
+          'Mantenimiento e instalación de bases de datos'
+        ],
+        technologies: [FaWordpress, FaLinux, SiJavascript, FaGitAlt, SiOracle, FaCss3Alt ]
+      }
+    ]
   },
   en: {
     title: 'Work Experience',
     professionalCareer: 'Professional Career',
-    job1: {
-      title: 'Senior Full Stack Developer',
-      company: 'Dropi',
-      period: '20233-Present',
-      responsibilities: [
-        'Development of web applications using React and Node.js',
-        'Implementation of serverless architectures with AWS'
-      ]
-    },
-    job2: {
-      title: 'Front-end Developer Vtex IO',
-      company: 'Balloom Group',
-      period: '2022-2023',
-      responsibilities: [
-        'Creation of user interfaces with React and Vue.js',
-        'Optimization of web application performance'
-      ]
-    }
+    jobs: [
+      {
+        title: 'Senior Full Stack Developer',
+        company: 'Dropi',
+        period: '2023-Present',
+        responsibilities: [
+          'Development of web applications using React (Next.js) and Node.js',
+          'Implementation of serverless architectures with AWS'
+        ],
+        technologies: [FaReact, SiNextdotjs, FaNodeJs, FaAws, SiTypescript, FaGitAlt, FaCss3Alt, SiTailwindcss  ]
+      },
+      {
+        title: 'Vtex IO Developer',
+        company: 'Balloom Group',
+        period: '2022-2023',
+        responsibilities: [
+          'Creation of custom components with React',
+          'Vtex IO front-end development',
+          'Layout design'
+        ],
+        technologies: [FaReact, SiVtex, SiJavascript, FaGitAlt, SiTailwindcss, FaCss3Alt  ]
+      },
+      {
+        title: 'Vtex IO Developer',
+        company: 'Summa Solution',
+        period: '2021-2022',
+        responsibilities: [
+          'Creation of custom components with React',
+          'Vtex IO front-end development',
+          'Layout design'
+        ],
+        technologies: [FaReact, SiVtex, SiJavascript, FaGitAlt, FaCss3Alt ]
+      },
+      {
+        title: 'Vtex IO Developer',
+        company: 'JUMP DIGITAL',
+        period: '2021-2021',
+        responsibilities: [
+          'Creation of custom components with React',
+          'Vtex IO front-end development',
+          'Layout design'
+        ],
+        technologies: [FaReact, SiVtex, SiJavascript, FaGitAlt, FaCss3Alt ]
+      },
+      {
+        title: 'Software Developer',
+        company: 'DevbotStudio S.A.S',
+        period: '2020-2021',
+        responsibilities: [
+          'Web application development with JavaScript',
+          'Implementation of software solutions'
+        ],
+        technologies: [SiJavascript, FaReact, FaNodeJs, FaGitAlt, FaPhp, FaCss3Alt, FaAngular  ]
+      },
+      {
+        title: 'Development Consultant',
+        company: 'Intelecto S.A.S',
+        period: '2020-2021',
+        responsibilities: [
+          'Web application development with JavaScript',
+          'Cloud server management (Linux)'
+        ],
+        technologies: [SiJavascript, FaLinux, SiMicrosoftazure, FaGitAlt, FaCss3Alt, FaPhp  ]
+      },
+      {
+        title: 'Systems Consultant',
+        company: 'MasterTics S.A.S',
+        period: '2018-2020',
+        responsibilities: [
+          'Web application development with WordPress',
+          'Cloud and physical server management "Linux"',
+          'Database maintenance and installation'
+        ],
+        technologies: [FaWordpress, FaLinux, SiJavascript, FaGitAlt, SiOracle, FaCss3Alt ]
+      }
+    ]
   }
 }
 
@@ -69,69 +186,23 @@ export default function Experiencia() {
         <CardHeader>
           <CardTitle>{t.professionalCareer}</CardTitle>
         </CardHeader>
-        <CardContent className="space-y-4">
-          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold text-orange-500">{t.job1.title}</h3>
-            <p className="text-sm text-white">{t.job1.company}, {t.job1.period}</p>
-            <ul className="list-disc list-inside mt-2 text-sm text-white">
-              {t.job1.responsibilities.map((resp, index) => (
-                <li key={index}>{resp}</li>
-              ))}
-            </ul>
-          </motion.div>
-          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold text-orange-500">{t.job2.title}</h3>
-            <p className="text-sm text-white">{t.job2.company}, {t.job2.period}</p>
-            <ul className="list-disc list-inside mt-2 text-sm text-white">
-              {t.job2.responsibilities.map((resp, index) => (
-                <li key={index}>{resp}</li>
-              ))}
-            </ul>
-          </motion.div>
-          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold text-orange-500">Desarrollador Vtex IO</h3>
-            <p className="text-sm text-white">Summa Solution , 2021-2022</p>
-            <ul className="list-disc list-inside mt-2 text-sm text-white">
-              {t.job2.responsibilities.map((resp, index) => (
-                <li key={index}>{resp}</li>
-              ))}
-            </ul>
-          </motion.div>
-          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold text-orange-500">Desarrollador Vtex IO</h3>
-            <p className="text-sm text-white">JUMP DIGITAL, 2021-2021</p>
-            <ul className="list-disc list-inside mt-2 text-sm text-white">
-              {t.job2.responsibilities.map((resp, index) => (
-                <li key={index}>{resp}</li>
-              ))}
-            </ul>
-          </motion.div>
-          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold text-orange-500"> Desarrollador de software</h3>
-            <p className="text-sm text-white">DevbotStudio S.A.S , 2020-2021</p>
-            <ul className="list-disc list-inside mt-2 text-sm text-white">
-              {t.job2.responsibilities.map((resp, index) => (
-                <li key={index}>{resp}</li>
-              ))}
-            </ul>
-          </motion.div>
-          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold text-orange-500"> Consultor de desarrollo</h3>
-            <p className="text-sm text-white">Intelecto S.A.S  , 2020-2021</p>
-            <ul className="list-disc list-inside mt-2 text-sm text-white">
-              <li >Desarrollo de aplicativos web con javascript </li>
-              <li >Manejo de servidores en la nube (Linux) </li>
-            </ul>
-          </motion.div>
-          <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
-            <h3 className="font-semibold text-orange-500"> Consultor Sistemas</h3>
-            <p className="text-sm text-white">MasterTics S.A.S  , 2018-2020</p>
-            <ul className="list-disc list-inside mt-2 text-sm text-white">
-              <li >Desarrollo de aplicativos web con wordpress </li>
-              <li >Manejo de servidores en la nube y fisicos "Linux" </li>
-              <li >Mantemiento y instalación de bases de datos </li>
-            </ul>
-          </motion.div>
+        <CardContent className="space-y-8">
+          {t.jobs.map((job, index) => (
+            <motion.div key={index} whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
+              <h3 className="font-semibold text-orange-500 text-xl">{job.title}</h3>
+              <p className="text-sm text-white mb-2">{job.company}, {job.period}</p>
+              <ul className="list-disc list-inside mt-2 text-sm text-white mb-4">
+                {job.responsibilities.map((resp, respIndex) => (
+                  <li key={respIndex}>{resp}</li>
+                ))}
+              </ul>
+              <div className="flex flex-wrap gap-2">
+                {job.technologies.map((Icon, techIndex) => (
+                  <Icon key={techIndex} className="text-2xl text-white hover:text-orange-500 transition-colors" />
+                ))}
+              </div>
+            </motion.div>
+          ))}
         </CardContent>
       </MotionCard>
     </motion.div>
