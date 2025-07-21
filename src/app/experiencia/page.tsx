@@ -14,9 +14,20 @@ const content = {
     professionalCareer: 'Trayectoria Profesional',
     jobs: [
       {
+        title: 'Desarrollador Vtex IO',
+        company: 'Balloom Group',
+        period: '2024-presente',
+        responsibilities: [
+          'Creación de componentes custom con React',
+          'Desarrollo front de Vtex IO',
+          'Maquetación'
+        ],
+        technologies: [FaReact, SiVtex, SiJavascript, FaGitAlt, SiTailwindcss, FaCss3Alt  ]
+      },
+      {
         title: 'Desarrollador Full Stack Senior',
         company: 'Dropi',
-        period: '2023-Presente',
+        period: '2023-2024',
         responsibilities: [
           'Desarrollo de aplicaciones web utilizando React (Next.js) y Node.js',
           'Implementación de arquitecturas serverless con AWS'
@@ -94,9 +105,20 @@ const content = {
     professionalCareer: 'Professional Career',
     jobs: [
       {
+        title: 'Vtex IO Developer',
+        company: 'Balloom Group',
+        period: '2024-Present',
+        responsibilities: [
+          'Creation of custom components with React',
+          'Vtex IO front-end development',
+          'Layout design'
+        ],
+        technologies: [FaReact, SiVtex, SiJavascript, FaGitAlt, SiTailwindcss, FaCss3Alt  ]
+      },
+      {
         title: 'Senior Full Stack Developer',
         company: 'Dropi',
-        period: '2023-Present',
+        period: '2023-2024',
         responsibilities: [
           'Development of web applications using React (Next.js) and Node.js',
           'Implementation of serverless architectures with AWS'
